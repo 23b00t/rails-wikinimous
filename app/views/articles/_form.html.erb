@@ -1,7 +1,7 @@
-<%= form_with model: article do |f| %>
+<%= form_with model: article, class: "form-control d-flex justify-content-center row" do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
   <%= f.label :content %>
-  <%= f.text_field :content %>
-  <%= f.submit %>
+  <%= f.text_area :content, class: "form-control mt-1", rows: 5 %>
+  <%= f.submit class: 'btn btn-primary mx-auto col-6 mt-4' %>
 <% end %>
